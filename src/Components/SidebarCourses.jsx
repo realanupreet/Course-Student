@@ -11,8 +11,9 @@ import Certificate from "../images/page57-61/Certificate.svg";
 import SideBarBottom1 from "../images/page57-61/SideBarBottom1.png";
 import SideBarBottom2 from "../images/page57-61/SideBarBottom2.png";
 import "../CSS/SideBar.css";
+import guyi from "../images/report/guy.svg";
 
-const SideBarCourse = () => {
+const SideBarCourse = ({title,guy, sidebar}) => {
   return (
     <>
       <div
@@ -20,7 +21,7 @@ const SideBarCourse = () => {
         style={{ background: "#215D4F" }}
       >
         {/* sidebar heading */}
-        <div className="flex pt-5 ml-[40px]">
+        <div className={`flex pt-5 ml-[40px] ${sidebar ? '' : 'opacity-0'}`}>
           <img
             src={Ellipse}
             className="relative left-4 h-14 w-14 opacity-60"
@@ -32,12 +33,13 @@ const SideBarCourse = () => {
             alt="ellipse"
           />
           <h1 className="relative -left-20 top-3 font-medium text-2xl decoration-white">
-            My Classroom
+            {!title && "My Classroom"}
+            {title && title}
           </h1>
         </div>
-
-        {/* list contents */}
-        <ul className="pl-10 py-4 mt h-[486px] mt-[90px]">
+{
+  sidebar ? <>
+  <ul className="pl-10 py-4 mt h-[486px]">
           <li className="flex mx-2 my-4 ">
             <img src={ContactCard} alt="Courses" />
             <h3 className="font-sans font-normal text-xl ml-3 decoration-white">
@@ -74,7 +76,7 @@ const SideBarCourse = () => {
               Notes
             </h3>
           </li>
-          <li className="flex mx-2 my-6">
+          <li className="flexs mx-2 my-6">
             <img src={Certificate} alt="Certificate" />
             <h3 className="font-sans font-normal text-xl ml-3 decoration-white">
               Certificate
@@ -87,10 +89,20 @@ const SideBarCourse = () => {
             </h3>
           </li>
         </ul>
+  
+  </> : <></>
+}
+       
+        
+        
+        
+  
+        {/* list contents */}
+        
 
         {/* bottom image */}
         <div className="hidden md:block w-[600px] bottom-0 absolute">
-          <img
+          {!guy && <><img
             src={SideBarBottom1}
             className="relative -bottom-[14rem]"
             alt="design"
@@ -101,7 +113,14 @@ const SideBarCourse = () => {
             className="relative bottom-0"
             alt="design2"
             width={328.2}
-          />
+          /></> }
+          {guy &&
+          <img
+            src={guyi}
+            className="relative bottom-0 mb-12"
+            alt="design2"
+            width={328.2}
+          />}
         </div>
       </div>
     </>

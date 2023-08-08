@@ -11,6 +11,7 @@ module.exports = {
         "slate-green": "#215D4F",
         "light-grey": "#969696",
         "edfling-green": "#45776B",
+        "honey":"#CB8461"
       },
 
       minHeight: {

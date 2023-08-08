@@ -18,7 +18,13 @@ import Signup from "./Pages/Signup/index";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import Page18 from "./Pages/Page18";
-
+import Page4 from "./Pages/Page4";
+import StudentReport from "./Pages/StudentReport";
+import StaffReport from "./Pages/StaffReport";
+import ExamReport from "./Pages/ExamReport";
+import SettingsEmailSettings from "./Pages/SettingsEmailSettings";
+import SettingsAcademicYear from "./Pages/SettingsAcademicYear";
+import SettingsPaymentSection from "./Pages/SettingsPaymentSection";
 
 function App() {
   return (
@@ -42,6 +48,14 @@ function App() {
           <Route path="/page27" element={<Page26_27 type={2}/>} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
+          <Route path="/" element={<Page4/>} />
+          <Route path="/student-report" element={<StudentReport/>} />
+          <Route path="/exam-report" element={<ExamReport/>} />
+          <Route path="/staff-report" element={<StaffReport/>} />
+          <Route path="/settings-email-settings" element={<SettingsEmailSettings/>} />
+          <Route path="/settings-academic-year" element={<SettingsAcademicYear/>} />
+          <Route path="/settings-payment-section" element={<SettingsPaymentSection/>} />
+          <Route path="*" element={<h1>404 Page</h1>} />
             
         </Routes>
         <Footer/>

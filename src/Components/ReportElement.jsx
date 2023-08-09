@@ -22,7 +22,7 @@ const ReportElement = (
         <h3 className="p-3 font-medium">Select Criteria</h3>
 
         <div className="border-slate-green border-3 rounded-xl p-4 ">
-          <div className="flex mx-2 mt-2 mb-6 justify-around ">
+          <div className="flex flex-col lg:flex-row 2xl:flex-row mx-2 mt-2 mb-6 justify-around ">
             <ReportInputElement inputs={report.d}/>
             
           </div>

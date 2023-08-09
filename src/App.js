@@ -48,8 +48,9 @@ function App() {
           <Route path="/page27" element={<Page26_27 type={2}/>} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
-          <Route path="/" element={<Page4/>} />
+          {/* <Route path="/" element={<Page4/>} /> */}
           <Route path="/student-report" element={<StudentReport/>} />
+          <Route path="/" element={<StudentReport/>} />
           <Route path="/exam-report" element={<ExamReport/>} />
           <Route path="/staff-report" element={<StaffReport/>} />
           <Route path="/settings-email-settings" element={<SettingsEmailSettings/>} />

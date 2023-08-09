@@ -15,7 +15,7 @@ const SettingsAcademicYear = () => {
         <>
             <AdminPanelBoilerplate page="Settings" route="General Settings">
                 <div className="flex flex-col items-center">
-                    <div className="py-4 border-1 border-black rounded-3xl w-7/12 flex items-center flex-col my-5">
+                    <div className="py-4 border-1 border-black rounded-3xl w-full md:w-7/12 flex items-center flex-col my-5">
                         <h1 className='h4 text-center font-bold mb-3'>Academic Year List</h1>
                         <div className="flex w-full justify-around">
                         { columns.map((item, index) => (
@@ -32,7 +32,7 @@ const SettingsAcademicYear = () => {
                             <div className="h-12 border-b border-black w-full text-center"></div>
                         )) }
                     </div>
-                    <div className="p-4 border-1 border-black rounded-3xl w-7/12 flex items-center flex-col">
+                    <div className="p-4 border-1 border-black rounded-3xl w-full md:w-7/12 flex items-center flex-col">
                         <h1 className='h4 text-center font-bold'>Add Academic Year</h1>
                         <div className="grid grid-cols-2 gap-12 p-4  ">
                             <div className="col-span-1">

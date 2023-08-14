@@ -25,6 +25,7 @@ import ExamReport from "./Pages/ExamReport";
 import SettingsEmailSettings from "./Pages/SettingsEmailSettings";
 import SettingsAcademicYear from "./Pages/SettingsAcademicYear";
 import SettingsPaymentSection from "./Pages/SettingsPaymentSection";
+import HomeworkReport from "./Pages/HomeworkReport";
 
 function App() {
   return (
@@ -55,7 +56,8 @@ function App() {
           <Route path="/staff-report" element={<StaffReport/>} />
           <Route path="/settings-email-settings" element={<SettingsEmailSettings/>} />
           <Route path="/settings-academic-year" element={<SettingsAcademicYear/>} />
-          <Route path="/settings-payment-section" element={<SettingsPaymentSection/>} />
+          <Route path="/settings-payment-section" element={ <SettingsPaymentSection /> } />
+          <Route path="/homework-report" element={<HomeworkReport/>} />
           <Route path="*" element={<h1>404 Page</h1>} />
             
         </Routes>

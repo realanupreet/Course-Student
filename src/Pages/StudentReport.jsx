@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ReportElement from "../Components/ReportElement";
 import AdminPanelBoilerplate from "./AdminPanelBoilerplate";
+
 // make a component called Report
 const StudentReport = () => {
 
@@ -34,7 +35,7 @@ const StudentReport = () => {
   return (
     <>
 
-      <AdminPanelBoilerplate page="Admin Panel" route="Report">
+      <AdminPanelBoilerplate page="Admin Panel" route="Report"  >
         <ReportElement reports={ reports } />
       </AdminPanelBoilerplate>
 

@@ -4,7 +4,6 @@ import SideBarCourse from "../Components/SidebarCourses";
 import NavSubCustom from "../Components/NavSubCustom";
 import SidebarCollapsable from '../Components/SideBarCollapsable';
 const AdminPanelBoilerplate = ({ children, page, route, sidebar = true, subtitle }) => {
-
     return (
         <>
             <main className=" md:my-4 flex h-auto justify-center font-['Poppins'] overflow-hidden	">

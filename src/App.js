@@ -26,12 +26,19 @@ import SettingsEmailSettings from "./Pages/SettingsEmailSettings";
 import SettingsAcademicYear from "./Pages/SettingsAcademicYear";
 import SettingsPaymentSection from "./Pages/SettingsPaymentSection";
 import HomeworkReport from "./Pages/HomeworkReport";
+import { useState } from "react";
 
 function App() {
+
+  // const [isopn, setIsopn] = useChange(store,"isopn");
+  // function handle_isopn(){
+  //   setIsopn(!isopn);
+  //   console.log("isopn",isopn);
+  // }
   return (
     <>
       <BrowserRouter>
-      <Navbar/>
+      <Navbar   />
         <Routes>
           <Route path="/page57" element={<Page57 />} />
           <Route path="/page58" element={<Page58 />} />
@@ -50,7 +57,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
           {/* <Route path="/" element={<Page4/>} /> */}
-          <Route path="/student-report" element={<StudentReport/>} />
+          <Route path="/student-report" element={<StudentReport    />} />
           <Route path="/" element={<StudentReport/>} />
           <Route path="/exam-report" element={<ExamReport/>} />
           <Route path="/staff-report" element={<StaffReport/>} />

@@ -30,8 +30,11 @@ import Header from "./Components/Header";
 import { useState } from "react";
 
 import { atom, useAtom } from 'jotai'
+import Dashboard from "./Pages/Accountant/Dashboard";
+import Fee from "./Pages/Accountant/Fee";
 
 export const isSidebarOpenGlobal= atom(false)
+export const series= atom([85,15])
 
 function App() {
 
@@ -68,6 +71,8 @@ function App() {
           <Route path="/settings-academic-year" element={<SettingsAcademicYear/>} />
           <Route path="/settings-payment-section" element={ <SettingsPaymentSection /> } />
           <Route path="/homework-report" element={<HomeworkReport/>} />
+          <Route path="/dashboard" element={<Dashboard/>} />
+          <Route path="/fee" element={<Fee/>} />
           <Route path="*" element={<h1>404 Page</h1>} />
             
         </Routes>

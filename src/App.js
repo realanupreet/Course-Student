@@ -32,7 +32,12 @@ import { useState } from "react";
 import { atom, useAtom } from 'jotai'
 import Dashboard from "./Pages/Accountant/Dashboard";
 import Fee from "./Pages/Accountant/Fee";
-
+import AccountantSignup from "./Pages/Accountant/Signup";
+import AccountantLogin from "./Pages/Accountant/Login";
+import AccountantSignupsuccess from "./Pages/Accountant/SignupSuccessful";
+import AccountantSendotp from "./Pages/Accountant/Sendotp";
+import AccountantUpdatePass from "./Pages/Accountant/UpdatePassword";
+import AccountantVerification from "./Pages/Accountant/Verification";
 export const isSidebarOpenGlobal= atom(false)
 export const series= atom([85,15])
 
@@ -73,8 +78,14 @@ function App() {
           <Route path="/homework-report" element={<HomeworkReport/>} />
           <Route path="/dashboard" element={<Dashboard/>} />
           <Route path="/fee" element={<Fee/>} />
+          <Route path="/accountant/signup" element={<AccountantSignup/>} />
+          <Route path="/accountant/login" element={<AccountantLogin/>} />
+          <Route path="/accountant/success" element={<AccountantSignupsuccess/>} />
+          <Route path="/accountant/sendotp" element={<AccountantSendotp/>} />
+          <Route path="/accountant/updatepass" element={<AccountantUpdatePass/>} />
+          <Route path="/accountant/verification" element={<AccountantVerification/>} />
           <Route path="*" element={<h1>404 Page</h1>} />
-            
+          
         </Routes>
         <Footer/>
       </BrowserRouter>

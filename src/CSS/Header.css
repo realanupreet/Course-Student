@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+.logo {
+    width: 67.85px;
+    height: 42.407px;
+    margin-top: 21px;
+    margin-left: 70px;
+}
+
+.name {
+    color: #215D4F;
+    margin-left: 2px;
+    margin-top: 30px;
+}
+
+.list-elements {
+    color: #7F7F7F;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.bell-icon {
+    width: 21.23px;
+    height: 26.538px;
+}
+
+.comments-icon {
+    width: 24.398px;
+    height: 24.398px;
+}
+
+.profile-icon {
+    width: 36.596px;
+    height: 36.596px;
+}
+
+.sec3 {
+    right: 0%;
+    margin-left: 350px;
+}
+
+.nav-list .list-item {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    size: 24px;
+    min-width: fit-content;
+    line-height: 36px;
+}
+
+.login {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #215D4F;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.signup {
+    min-width: fit-content;
+    background: #215D4F;
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    scroll-timeline-axis: 18px;
+    line-height: 27px;
+    /* margin-left: 10%; */
+    border-radius: 10px;
+}
+
+.notification-circle {
+    position: absolute;
+    top: 2.75px;
+    right: -4px;
+}

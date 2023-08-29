@@ -26,19 +26,22 @@ import SettingsEmailSettings from "./Pages/SettingsEmailSettings";
 import SettingsAcademicYear from "./Pages/SettingsAcademicYear";
 import SettingsPaymentSection from "./Pages/SettingsPaymentSection";
 import HomeworkReport from "./Pages/HomeworkReport";
+import Header from "./Components/Header";
 import { useState } from "react";
+
+import { atom, useAtom } from 'jotai'
+
+export const isSidebarOpenGlobal= atom(false)
 
 function App() {
 
-  // const [isopn, setIsopn] = useChange(store,"isopn");
-  // function handle_isopn(){
-  //   setIsopn(!isopn);
-  //   console.log("isopn",isopn);
-  // }
+
   return (
     <>
       <BrowserRouter>
-      <Navbar   />
+      {/* <Navbar   />
+       */}
+<Header />
         <Routes>
           <Route path="/page57" element={<Page57 />} />
           <Route path="/page58" element={<Page58 />} />
